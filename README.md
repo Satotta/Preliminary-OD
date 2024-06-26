@@ -49,19 +49,9 @@ INSTRUCTIONS:
 
 
 FUNCTION DESCRIPTIONS:
---> The "OrbitComp" function utilizes Gauss' Angles Only method of preliminary orbital determination to define the 
-    Keplerian orbital elements and state vectors at an intial and propagated state. It can handle both a spherical Earth
-    model as well as an oblate-spheroid Earth model which is specified by the input variable 'model'.
-   --> NOTE: The "OrbitComp" function employs an iterative refinement method when calculating slant values. By default, 
-       the loop will terminate when one of the following two conditions is met: the newly calculated slant values rounded to
-       ten decimal places equals the previous iteration's slant values rounded to ten decimal places, OR, one hundred
-       iterations have been achieved.
-
---> The "figures" function utilizes a standard ECI to orbital elements algorithm to create the following two plots. 
-   --> Given the initial and propagated state vector of the main satellite and the type of Earth model used in their 
-       calculations, the function will output a plot of the initial and propagated orbits and positions at the respective 
-       epochs defined by each state vector. If the model specified is the Spherical Earth model, this plot will only contain
-       one orbit as the orbit does not change in 3 dimensional space for this model.
-   --> Given the propagated state vector of the main satellite and the state vector of another satellite corresponding to the
-       same epoch, the function will output a plot of the propagated main satellite's orbit and position as well as the 
-       orbit and position of the compare satellite.
+    The "OrbitComp" function utilizes Gauss' Angles Only method of preliminary orbital determination to define the Keplerian orbital elements and state vectors at an intial and propagated state. It can handle both a spherical Earth model as well as an oblate-spheroid Earth model which is specified by the input variable 'model'.
+    
+    NOTE: The "OrbitComp" function employs an iterative refinement method when calculating slant values. By default, the loop will terminate when one of the following two conditions is met: the newly calculated slant values rounded to ten decimal places equals the previous iteration's slant values rounded to ten decimal places, OR, one hundred iterations have been achieved.
+    
+    The "figures" function utilizes a standard ECI to orbital elements algorithm to create the following two plots. Given the initial and propagated state vector of the main satellite and the type of Earth model used in their calculations, the function will output a plot of the initial and propagated orbits and positions at the respective epochs defined by each state vector. If the model specified is the Spherical Earth model, this plot will only contain one orbit as the orbit does not change in 3 dimensional space for this model.
+    Given the propagated state vector of the main satellite and the state vector of another satellite corresponding to the same epoch, the function will output a plot of the propagated main satellite's orbit and position as well as the orbit and position of the compare satellite.
